@@ -4,7 +4,7 @@ import "./button.scss"
 function Button(props) {
     return (
         <div className='button'>
-            <button className='button-add' type='button'> Add Task </button>
+            <button className='button-add' type='button' onClick={props.onClick}> Add Task </button>
             <select className='button-options'>
                 <option className='button-options-all'> All </option>
                 <option className='button-options-completed'> Completed </option>
