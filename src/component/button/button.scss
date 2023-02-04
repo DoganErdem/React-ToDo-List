@@ -15,6 +15,16 @@
         padding: 10px 15px;
     }
 
+    &-edit{
+        background-color: rgb(52, 184, 52);
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: 10px 15px;
+    }
+
     &-options{
         background-color:rgb(35, 166, 166, 0.7) ;
         color: white;
