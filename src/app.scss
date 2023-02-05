@@ -1,12 +1,35 @@
+@import "mixin";
+
 .App{
 display: flex;
 flex-direction: column;
-max-width: 70%;
 justify-content: center;
+max-width: 100%;
 align-items: center;
 margin-top: 200px;
 font-size: 2rem;
 font-weight: 700;
 color: darkcyan;
 padding-left: 100px;
+
+@include mq ("mobile"){
+    display: flex;
+    margin-top: 20px;
+    width: 90vw;
+    padding-left: 20px;
+}
+
+@include mq ("tablet"){
+    display: flex;
+    width: 90%;
+    margin-top: 100px;
+    padding: 0px 30px;
+}
+
+@include mq (){
+    display: flex;
+    width: 80%;
+    padding: 0px 100px;
+}
+
 }

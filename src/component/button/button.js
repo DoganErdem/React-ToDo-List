@@ -11,10 +11,6 @@ function Button({ onClick, changeBtn}) {
             <button className='button-edit' type='button' onClick={onClick}> Edit Task </button>
             }
             
-            <select className='button-options' >
-                <option className='button-options-all'> All </option>
-                <option className='button-options-completed'> Completed </option>
-            </select>
         </div>
     );
 }

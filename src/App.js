@@ -78,7 +78,7 @@ function App() {
     <div className="App">
 
       TODO LIST
-      <Input value={input} type="text" placeholder={"Yapılacak görev giriniz!"} onChange={(e) => {setInput(e.target.value)}} />
+      <Input value={input} type="text" placeholder={"Write new task!"} onChange={(e) => {setInput(e.target.value)}} />
       <Button onClick={addItem} changeBtn={changeBtn}/>
       {list.length>0 && <List list={list} deleteItem={deleteItem} complete={complete} editItem={editItem} />}
 
